@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.apolo.herença&apos; to &apos;com.apolo.herança&apos;&#x0D;&#x0A;- Original project: &apos;poocursoemvideo&apos;&#x0D;&#x0A;- Original element: &apos;poocursoemvideo/src/com.apolo.herença&apos;&#x0D;&#x0A;- Renamed element: &apos;poocursoemvideo/src/com.apolo.herança&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.apolo.herença&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.apolo.herença" name="com.apolo.herança" qualified="false" references="true" stamp="1599983258676" textual="false" version="1.0"/>
+</session>

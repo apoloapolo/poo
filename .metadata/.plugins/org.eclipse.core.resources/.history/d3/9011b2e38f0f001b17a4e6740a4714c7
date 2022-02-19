@@ -1,0 +1,10 @@
+package com.folks.GUI;
+
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		TelaLogin frame = new TelaLogin();
+		frame.setVisible(true);
+	}
+
+}

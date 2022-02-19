@@ -1,0 +1,179 @@
+package com.folks.GUI;
+
+import com.folks.*;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.text.MaskFormatter;
+
+import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.awt.event.ActionEvent;
+import javax.swing.JFormattedTextField;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+
+
+public class Funcionario extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textNome;
+	private JTextField textSalario;
+	private Funcionarios funcionario;
+	private ArrayList<Funcionarios> funcionarios;
+
+	public void CadastrarFun(String nome, String cpf, double salario, String departamento) {
+		funcionario = new Funcionarios();
+		funcionario.setNome(nome);
+		funcionario.setCpf(cpf);
+		funcionario.setSalario(salario);
+		funcionario.setDepartamento(departamento);
+		funcionarios.add(funcionario);
+	}
+	
+	public Funcionario() throws ParseException {
+		Funcionario frame = new Funcionario();
+		frame.setVisible(true);
+		setResizable(false);
+		setBackground(new Color(135, 206, 235));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 537, 334);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(135, 206, 250));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		funcionarios = new ArrayList<Funcionarios>();
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(47, 38, 427, 215);
+		panel.setBackground(new Color(173, 216, 230));
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblNome = new JLabel("Nome");
+		lblNome.setBounds(42, 11, 101, 14);
+		lblNome.setFont(new Font("Calibri", Font.PLAIN, 19));
+		panel.add(lblNome);
+		
+		JLabel lblDepto = new JLabel("Departamento");
+		lblDepto.setBounds(42, 112, 112, 24);
+		lblDepto.setFont(new Font("Calibri", Font.PLAIN, 19));
+		panel.add(lblDepto);
+		
+		JLabel lblSalrio = new JLabel("Sal\u00E1rio");
+		lblSalrio.setBounds(42, 77, 101, 24);
+		lblSalrio.setFont(new Font("Calibri", Font.PLAIN, 19));
+		panel.add(lblSalrio);
+		
+		JLabel lblCpf = new JLabel("CPF");
+		lblCpf.setBounds(42, 42, 51, 24);
+		lblCpf.setFont(new Font("Calibri", Font.PLAIN, 19));
+		panel.add(lblCpf);
+		
+		JLabel lblLogin_1 = new JLabel("Login");
+		lblLogin_1.setBounds(42, 147, 79, 24);
+		lblLogin_1.setFont(new Font("Calibri", Font.PLAIN, 19));
+		panel.add(lblLogin_1);
+		lblLogin_1.setVisible(false);
+		
+		JLabel lblSenha_1 = new JLabel("Senha");
+		lblSenha_1.setBounds(42, 180, 69, 24);
+		lblSenha_1.setFont(new Font("Calibri", Font.PLAIN, 19));
+		panel.add(lblSenha_1);
+		lblSenha_1.setVisible(false);
+		
+		textNome = new JTextField();
+		textNome.setBounds(162, 9, 221, 20);
+		panel.add(textNome);
+		textNome.setColumns(10);
+		
+		textSalario = new JTextField();
+		textSalario.setBounds(162, 81, 159, 20);
+		panel.add(textSalario);
+		textSalario.setColumns(10);
+		
+		JTextField formattedTextCpf = new JFormattedTextField(new MaskFormatter("###.###.###-##"));
+		formattedTextCpf.setBounds(162, 46, 159, 20);
+		panel.add(formattedTextCpf);
+		
+		JTextField textField = new JTextField();
+		textField.setBounds(162, 147, 159, 20);
+		textField.setColumns(10);
+		panel.add(textField);
+		textField.setVisible(false);
+		
+		JTextField textField_1 = new JTextField();
+		textField_1.setBounds(162, 182, 159, 20);
+		textField_1.setColumns(10);
+		panel.add(textField_1);
+		textField_1.setVisible(false);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setBounds(162, 115, 159, 20);
+		comboBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				if(String.valueOf(comboBox.getSelectedItem()) == "Departamento Pessoal" ) {
+					
+					lblLogin_1.setVisible(true);
+					lblSenha_1.setVisible(true);
+					textField.setVisible(true);
+					textField_1.setVisible(true);
+					
+
+				}else {
+					lblLogin_1.setVisible(false);
+					lblSenha_1.setVisible(false);
+					textField.setVisible(false);
+					textField_1.setVisible(false);
+				}
+			}
+		});
+		comboBox.setFont(new Font("Calibri", Font.BOLD, 14));
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"", "Gerente de Projeto", "Programação", "Departamento Pessoal"}));
+		comboBox.setEditable(true);
+		panel.add(comboBox);
+		
+		JLabel lblProgramador = new JLabel("Funcion\u00E1rio");
+		lblProgramador.setBounds(202, 11, 117, 27);
+		lblProgramador.setFont(new Font("Calibri", Font.BOLD, 20));
+		contentPane.add(lblProgramador);
+		
+		JButton btnSalvar = new JButton("Salvar");
+		btnSalvar.setBounds(123, 264, 89, 23);
+		btnSalvar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				double salario = Double.parseDouble(textSalario.getText());
+				CadastrarFun(textNome.getText(),formattedTextCpf.getText(),salario,String.valueOf(comboBox.getSelectedItem()));
+				JOptionPane.showMessageDialog(null, "Bem vindo(a)!" + funcionarios.size(), "Mensagem", JOptionPane.INFORMATION_MESSAGE );
+			}
+		});
+		btnSalvar.setFont(new Font("Calibri", Font.PLAIN, 14));
+		btnSalvar.setBackground(new Color(250, 128, 114));
+		contentPane.add(btnSalvar);
+		
+		JButton btnCancelar = new JButton("Cancelar");
+		btnCancelar.setBounds(280, 264, 89, 23);
+		btnCancelar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+				new MenuPrincipal().setVisible(true);
+			}
+		});
+		btnCancelar.setBackground(new Color(176, 224, 230));
+		btnCancelar.setFont(new Font("Calibri", Font.PLAIN, 14));
+		contentPane.add(btnCancelar);
+	}
+}
