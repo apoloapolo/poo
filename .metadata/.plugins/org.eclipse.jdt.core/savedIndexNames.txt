@@ -20,7 +20,6 @@ INDEX VERSION 1.131+C:\Users\vinic\Desktop\Apolo\POO\.metadata\.plugins\org.ecli
 649438984.index
 659561907.index
 3627594154.index
-1136112893.index
 34998837.index
 2087078603.index
 1865797976.index
