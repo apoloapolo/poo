@@ -33,9 +33,11 @@ public class Estoque {
 					"Baixa não realizada: quantidade que seria retirada deixa o estoque abaixo da quantidade mínima");
 		}
 	}
-	
+
 	public void relatorio() {
-		System.out.printf("");
+		System.out.printf("Produto: %s\n", this.produto.getNome());
+		System.out.printf("Quantidade Atual: %s\n", this.qtdAtual);
+		System.out.printf("Quandidade Mínima: %s\n", this.qtdMinima);
 	}
 
 }

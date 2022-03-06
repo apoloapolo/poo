@@ -18,4 +18,10 @@ public class Produto {
 		this.nome = novoNome;
 	}
 
+	public String getNome() {
+		return nome;
+	}
+	
+	
+
 }
