@@ -2,7 +2,7 @@ package com.folks;
 
 public class Funcionarios {
 	private int id;
-	private String nome, cpf, departamento, admiss„o;
+	private String nome, cpf, departamento, admiss√£o;
 	private double salario;
 
 	public String getNome() {
@@ -29,12 +29,12 @@ public class Funcionarios {
 		this.departamento = departamento;
 	}
 
-	public String getAdmiss„o() {
-		return admiss„o;
+	public String getAdmiss√£o() {
+		return admiss√£o;
 	}
 
-	public void setAdmiss„o(String admiss„o) {
-		this.admiss„o = admiss„o;
+	public void setAdmiss√£o(String admiss√£o) {
+		this.admiss√£o = admiss√£o;
 	}
 
 	public double getSalario() {

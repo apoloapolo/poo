@@ -23,7 +23,7 @@ public class RelacaoVacinados {
 		return total;
 	}
 
-	public void listarPessoasQueNãoTomaram2aDose() {
+	public void listarPessoasQueNaoTomaram2aDose() {
 		int primeiradose = 0;
 		int segundadose = 0;
 		ArrayList<String> listaverificacao = new ArrayList<String>();
@@ -46,7 +46,7 @@ public class RelacaoVacinados {
 		for (int i = 0; i < 61; i++)
 			System.out.printf("-");
 		System.out.printf("\nTotal de vacinados acima de 65 anos: %s\n", this.calcularTotalVacinadosAcimaDe(65));
-		System.out.printf("Total de vacinados que não tomaram a 2a. dose: %s\n", (primeiradose-segundadose));
+		System.out.printf("Total de vacinados que nÃ£o tomaram a 2a. dose: %s\n", (primeiradose-segundadose));
 		System.out.printf("Total de vacinados que tomaram a 2a. dose: %s\n", segundadose);
 	}
 

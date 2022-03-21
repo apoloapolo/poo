@@ -3,7 +3,7 @@ package com.apolo.atividade4;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Quest„o2 {
+public class Quest√£o2 {
 
 	public static void main(String[] args) {
 		HashMap<String, Double> alunos = new HashMap<String, Double>();
@@ -18,6 +18,6 @@ public class Quest„o2 {
 			leitor.nextLine();
 			alunos.put(cpf, nota);
 		}
-		System.out.println("A nota do aluno com CPF 764.605.203-56 È "+alunos.get("764.605.203-56"));
+		System.out.println("A nota do aluno com CPF 764.605.203-56 : "+alunos.get("764.605.203-56"));
 	}
 }
