@@ -1,7 +1,7 @@
 //org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
 SAVE_AUTOMATICALLY=true
-SAVE_AUTOMATICALLY_INTERVAL=60
+SAVE_AUTOMATICALLY_INTERVAL=30
 eclipse.preferences.version=1
 org.eclipse.cdt.debug.ui.ModulesDetailPaneFont=1|Consolas|14.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 org.eclipse.cdt.internal.ui.compare.AsmMergeViewer=1|Consolas|14.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
