@@ -1,3 +1,5 @@
-/.metadata/
+metadata/
+.metadata/
+.metadata/.log
 projeto-ip2/
-projeto-ip2/
+
