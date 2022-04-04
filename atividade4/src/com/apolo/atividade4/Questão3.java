@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Quest„o3 {
+public class Quest√£o3 {
 
 	public static void main(String[] args) {
 		ArrayList<Double> produto = new ArrayList<Double>();

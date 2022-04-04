@@ -1,4 +1,4 @@
-package com.apolo.herança;
+package com.apolo.heranÃ§a;
 
 public abstract class Pessoa {
 	private String nome, sexo;

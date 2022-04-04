@@ -1,4 +1,4 @@
-package com.apolo.herança;
+package com.apolo.heranÃ§a;
 
 public class Bolsista extends Aluno {
 	private double bolsa;
@@ -9,7 +9,7 @@ public class Bolsista extends Aluno {
 	
 	@Override
 	public void pagarMensalidade() {
-		System.out.println(this.getNome() + " é bolsista");
+		System.out.println(this.getNome() + " ï¿½ bolsista");
 	}
 
 	public double getBolsa() {

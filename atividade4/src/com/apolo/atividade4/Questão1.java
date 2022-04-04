@@ -2,7 +2,7 @@ package com.apolo.atividade4;
 
 import java.util.HashSet;
 
-public class Quest„o1 {
+public class Quest√£o1 {
 
 	public static void main(String[] args) {
 		HashSet<String> marcas = new HashSet<String>();

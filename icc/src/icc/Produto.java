@@ -2,7 +2,7 @@ package icc;
 
 public class Produto {
 	private String nome, marca, codigo;
-	private float preço;
+	private float preÃ§o;
 	
 	public String getNome() {
 		return nome;
@@ -22,10 +22,10 @@ public class Produto {
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
-	public float getPreço() {
-		return preço;
+	public float getPreÃ§o() {
+		return preÃ§o;
 	}
-	public void setPreço(float preço) {
-		this.preço = preço;
+	public void setPreÃ§o(float preÃ§o) {
+		this.preÃ§o = preÃ§o;
 	}
 }

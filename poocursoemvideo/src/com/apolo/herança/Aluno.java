@@ -1,4 +1,4 @@
-package com.apolo.herança;
+package com.apolo.heranÃ§a;
 
 public class Aluno extends Pessoa{
 	private int matricula;

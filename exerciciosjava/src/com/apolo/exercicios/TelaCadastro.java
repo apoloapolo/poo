@@ -24,7 +24,7 @@ public class TelaCadastro extends JFrame {
 	private JPanel jpanel;
 	private JTextField textFieldNome;
 	private JTextField textFieldTelefone;
-	private JTextField textFieldEndereço;
+	private JTextField textFieldEndereÃ§o;
 	private JTextField textFieldEscola;
 	private JTextField textFieldNacio;
 	private JTextField textFieldIdade;
@@ -89,7 +89,7 @@ public class TelaCadastro extends JFrame {
 		label2.setBounds(10, 36, 66, 14);
 		jpanel.add(label2);
 		
-		JLabel label3 = new JLabel("Endereço");
+		JLabel label3 = new JLabel("EndereÃ§o");
 		label3.setBounds(10, 61, 66, 14);
 		jpanel.add(label3);
 		
@@ -105,7 +105,7 @@ public class TelaCadastro extends JFrame {
 		label6.setBounds(10, 135, 46, 14);
 		jpanel.add(label6);
 		
-		JLabel label17 = new JLabel("G\u00EAnero");
+		JLabel label17 = new JLabel("GÃªEAnero");
 		label17.setBounds(10, 160, 46, 14);
 		jpanel.add(label17);
 		
@@ -123,10 +123,10 @@ public class TelaCadastro extends JFrame {
 		jpanel.add(textFieldTelefone);
 		textFieldTelefone.setColumns(10);
 		
-		textFieldEndereço = new JTextField();
-		textFieldEndereço.setBounds(118, 58, 86, 20);
-		jpanel.add(textFieldEndereço);
-		textFieldEndereço.setColumns(10);
+		textFieldEndereÃ§o = new JTextField();
+		textFieldEndereÃ§o.setBounds(118, 58, 86, 20);
+		jpanel.add(textFieldEndereÃ§o);
+		textFieldEndereÃ§o.setColumns(10);
 		
 		textFieldEscola = new JTextField();
 		textFieldEscola.setBounds(118, 83, 86, 20);
