@@ -3,3 +3,8 @@ metadata/
 .metadata/.log
 projeto-ip2/
 
+.metadata/.log
+*.resources
+*.index
+*.txt
+*.ini
